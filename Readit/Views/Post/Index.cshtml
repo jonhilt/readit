@@ -1,0 +1,19 @@
+﻿@model Readit.Controllers.PostList
+
+<h2>/r/dotnet</h2>
+
+@foreach (var post in Model.Posts)
+{
+    <div class="row listItem">
+        <div class="col-sm-1">Votes</div>
+        <div class="col-sm-11">
+            <h3><a asp-action="details" asp-route-id="@post.Id" class="title">@post.Title</a></h3><a class="postLink" href="@post.Link">@post.Link</a>
+            <div>
+                <span>@post.PostedBy</span>
+            </div>
+            <div>
+                <span>Buttons here</span>
+            </div>
+        </div>
+    </div>
+}

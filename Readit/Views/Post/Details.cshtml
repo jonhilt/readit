@@ -1,0 +1,16 @@
+﻿@model Readit.Controllers.PostDetails
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="post-details">
+    <div class="content">
+        <a asp-action="Index">r/dotnet</a> <span>- Posted by @Model.PostedBy</span>
+        <h2>@Model.Title</h2>
+        <p>@Model.Description</p>
+        <div>
+            <span>Buttons here</span>
+        </div>
+    </div>
+</div>
