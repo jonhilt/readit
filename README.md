@@ -5,7 +5,7 @@ Accompanying code for the short "Build your Features using ASP.NET Core MVC" ema
 
 It uses EF Core as its ORM for retrieving data from an SQL database.
 
-These are the relevant lines in `startup.cs`.
+These are the relevant lines in `startup.cs`
 
 ```csharp
 var connection = "Server=(localdb)\\mssqllocaldb;Database=ReadIt;Trusted_Connection=True;ConnectRetryCount=0";
@@ -20,7 +20,7 @@ Once you have a database connection which works, you'll want to run the migratio
 Update-Database
 ```
 
-You'll also need to manually add at least one entry to the `Posts` table which the migration will create for you.
+You'll also need to manually add at least one entry to the `Posts` table (the migration will create the table but not populate it with any data).
 
 ## Dependency Injection
 
